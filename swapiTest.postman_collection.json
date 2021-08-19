@@ -1,0 +1,95 @@
+{
+	"variables": [],
+	"info": {
+		"name": "swapiTest",
+		"_postman_id": "869e5074-a702-a2d6-fe70-a512f08cb846",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET people without encoding",
+			"request": {
+				"url": "http://localhost:3000/people/3",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET people with ewok encoding",
+			"request": {
+				"url": {
+					"raw": "http://localhost:3000/people/3?encoding=ewok",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"people",
+						"3"
+					],
+					"query": [
+						{
+							"key": "encoding",
+							"value": "ewok",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET planet with ewok encoding",
+			"request": {
+				"url": {
+					"raw": "http://localhost:3000/planets/3?encoding=ewok",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"planets",
+						"3"
+					],
+					"query": [
+						{
+							"key": "encoding",
+							"value": "ewok",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET planet without encoding",
+			"request": {
+				"url": "http://localhost:3000/planets/3",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
